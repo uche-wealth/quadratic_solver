@@ -27,3 +27,6 @@ quadratic-solver = "quadratic_solver.run:main"
 [project.urls]
 Homepage = "https://github.com/uche-wealth/quadratic_solver"
 Issues = "https://github.com/uche-wealth/quadratic_solver/issues"
+
+[tool.setuptools.packages.find]
+include = ["quadratic_solver*"]
