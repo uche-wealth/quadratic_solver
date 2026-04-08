@@ -5,24 +5,24 @@ and visualizing quadratic equations. This tool computes key properties of
 quadratic functions and provides a graphical representation of the curve.
 
 
-## 🚀 Features
+## Features
 
 * Solve quadratic equations of the form:
   **ax² + bx + c = 0**
 
 * Compute:
 
-  * ✅ Real or complex roots
-  * ✅ Discriminant
-  * ✅ Vertex (turning point)
-  * ✅ Axis of symmetry
-  * ✅ Ordered pairs (for plotting)
-  * ✅ Nature of roots (distinct, repeated, or complex)
+  * Real or complex roots
+  * Discriminant
+  * Vertex (turning point)
+  * Axis of symmetry
+  * Ordered pairs (for plotting)
+  * Nature of roots (distinct, repeated, or complex)
 
-* 📈 Graph the quadratic function directly from the CLI
+* Graph the quadratic function directly from the CLI
 
 
-## 📦 Installation
+## Installation
 
 Install via pip:
 
@@ -31,7 +31,7 @@ pip install quadratic-solver
 ```
 
 
-## 🛠️ Usage
+## Usage
 
 Run the CLI tool from your terminal:
 
@@ -48,7 +48,7 @@ Enter coefficient c: 2
 ```
 
 
-## 📊 Example Output
+## Example Output
 
 ```
 Quadratic Equation: 1x² - 3x + 2 = 0
@@ -71,7 +71,7 @@ Sample Points:
 A graph window will also appear displaying the parabola.
 
 
-## 📈 Graphing
+## Graphing
 
 The application automatically generates a plot of the quadratic function, 
 highlighting:
@@ -81,7 +81,7 @@ highlighting:
 * The curve shape (concave up or down)
 
 
-## 🧠 How It Works
+## How It Works
 
 The app uses standard quadratic formula logic:
 
@@ -98,7 +98,7 @@ x = (-b ± √(b² - 4ac)) / (2a)
 Graphing is handled programmatically using Python plotting libraries.
 
 
-## 🧪 Requirements
+## Requirements
 
 * Python 3.10+
 * Required dependencies (installed automatically):
@@ -106,7 +106,7 @@ Graphing is handled programmatically using Python plotting libraries.
   * matplotlib
   * numpy 
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 quadratic_solver/
@@ -116,7 +116,7 @@ quadratic_solver/
 ```
 
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -126,23 +126,23 @@ Contributions are welcome!
 4. Submit a pull request
 
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
 
 
-## 💡 Future Improvements
+## Future Improvements
 
 * Export graph as image file
 * Batch processing of multiple equations
 * Interactive mode with command flags
 
 
-## 👨‍💻 Author
+## Author
 
-Built with ❤️ by *Uchenna Adubasim*
+Built by *Uchenna Adubasim*
 
 
-## ⭐ Support
+## Support
 
 If you find this project useful, consider giving it a star on GitHub!
