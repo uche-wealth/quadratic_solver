@@ -1,4 +1,16 @@
-from quadratic_model import QuadraticFunctions
+import logging 
+
+
+logging.basicConfig(level=logging.INFO)
+
+
+try:
+	from .quadratic_model import QuadraticFunctions
+except Exception as exc:
+    logging.error('An error occured: %s' % exc)
+else:
+    logging.info('Successfully imported module')
+	
 
 class SolveAndGraphQuadratics(QuadraticFunctions):
 	"""Inherits from the parent class QuadraticFunctions."""
