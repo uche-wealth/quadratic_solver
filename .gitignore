@@ -4,7 +4,6 @@ __pycache__/
 build/
 dist/
 quadratic_solver.egg-info/
-run-Wealth-Surface-Laptop-4.py
-solve_and_graph-Wealth-Surface-Laptop-4.py
-logs.txt
+*-Wealth-Surface-Laptop-4.py
+*.log
 
