@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quadratic_solver"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
   { name="Uchenna Adubasim", email="uchadubs@gmail.com" },
 ]
@@ -35,4 +35,8 @@ Homepage = "https://github.com/uche-wealth/quadratic_solver"
 Issues = "https://github.com/uche-wealth/quadratic_solver/issues"
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["quadratic_solver*"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
