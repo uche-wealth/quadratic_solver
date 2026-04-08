@@ -1,4 +1,4 @@
-from quadratic_functions import QuadraticFunctions
+from quadratic_model import QuadraticFunctions
 
 class SolveAndGraphQuadratics(QuadraticFunctions):
 	"""Inherits from the parent class QuadraticFunctions."""

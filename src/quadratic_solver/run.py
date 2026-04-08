@@ -1,4 +1,9 @@
-from solve_and_graph_quadratics import SolveAndGraphQuadratics
+from solve_and_graph import SolveAndGraphQuadratics
 
-sgq = SolveAndGraphQuadratics(a='', b='', c='')
-sgq.main_loop()
+
+def main():
+    sgq = SolveAndGraphQuadratics(a='', b='', c='')
+    sgq.main_loop()
+
+
+print(main())

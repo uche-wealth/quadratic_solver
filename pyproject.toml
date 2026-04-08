@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quadratic_solver"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Uchenna Adubasim", email="uchadubs@gmail.com" },
 ]
@@ -20,6 +20,9 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+
+[project.scripts]
+quadratic-solver = "quadratic_solver.run:main"
 
 [project.urls]
 Homepage = "https://github.com/uche-wealth/quadratic_solver"
