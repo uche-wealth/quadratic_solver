@@ -39,6 +39,12 @@ Run the CLI tool from your terminal:
 quadratic-solver
 ```
 
+Or in Python just import:
+
+```python
+from quadratic_solver.run import main
+```
+
 You will be prompted to input the coefficients:
 
 ```bash
@@ -133,7 +139,6 @@ This project is licensed under the MIT License.
 
 ## Future Improvements
 
-* Export graph as image file
 * Batch processing of multiple equations
 * Interactive mode with command flags
 
