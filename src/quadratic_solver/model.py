@@ -2,6 +2,7 @@ import math
 import cmath
 import matplotlib.pyplot as plt
 import numpy as np
+from typing import Tuple
 
 
 class QuadraticFunctions:
@@ -12,7 +13,7 @@ class QuadraticFunctions:
 		self.b = b
 		self.c = c
 
-	def convert_to_float(self):
+	def convert_to_float(self) ->Tuple[float, float, float]:
 		""" Return float values of user input"""
 		self.a = float(self.a)
 		self.b = float(self.b)
@@ -20,7 +21,7 @@ class QuadraticFunctions:
 		return self.a, self.b, self.c
 
 
-	def vertex(self):
+	def vertex(self) ->Tuple[float, float]:
 		"""Return Tuple containing the vertex of the quadratic function"""
 		qf = QuadraticFunctions(self.a, self.b, self.c)
 		qf.convert_to_float()
@@ -30,7 +31,7 @@ class QuadraticFunctions:
 		return ordered_pair
 
 
-	def discriminant(self):
+	def discriminant(self) ->float:
 		"""Return the value of the discriminant"""
 		qf = QuadraticFunctions(self.a, self.b, self.c)
 		qf.convert_to_float()
@@ -38,7 +39,7 @@ class QuadraticFunctions:
 		return quadratic_discriminant
 
 
-	def quadratic_formula(self):
+	def quadratic_formula(self) ->str:
 		"""Model the quadratic formula"""
 		qf = QuadraticFunctions(self.a, self.b, self.c)
 		v = qf.vertex()
@@ -58,9 +59,13 @@ class QuadraticFunctions:
 
 		print(
 			f'''
-			\nThe roots are {x_1} and {x_2}\nDiscriminant: {d}\nVertex: {v}\nAxis of Symmetry: x = {v[0]}
+			The roots are {x_1} and {x_2}
+			Discriminant: {d}
+			Vertex: {v}
+			Axis of Symmetry: x = {v[0]}
 			'''
 			)
+		return ''
 
 
 	def style_graph(self):
@@ -75,12 +80,10 @@ class QuadraticFunctions:
 
 	def plot_and_display_graph(self):
 		"""Plot and display graph of the quadratic function."""
-		x = np.linspace(-10, 10, 50)
-		y = (self.a*(x)**2) + (self.b*x) + self.c
-
 		qf = QuadraticFunctions(self.a, self.b, self.c)
 		qf.style_graph()
-
+		x = np.linspace(-10, 10, 50)
+		y = (self.a*(x)**2) + (self.b*x) + self.c
 		show_roots = np.roots([self.a, self.b, self.c])
 		show_x_values = [show_roots[0], show_roots[1]]
 		show_y_values = [0, 0]
@@ -89,5 +92,15 @@ class QuadraticFunctions:
 		plt.legend()
 		plt.plot(x, y, 'b', linewidth=3)
 		plt.show()
+
+
+# def main():
+	
+#     qf = QuadraticFunctions(12,24,83)
+#     print(qf.convert_to_float())
+#     print(qf.quadratic_formula())
+#     return qf.plot_and_display_graph()
+
+# print(main())
 
 
