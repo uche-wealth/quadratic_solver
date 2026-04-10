@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quadratic_solver"
-version = "1.0.2"
+version = "1.0.6"
 authors = [
   { name="Uchenna Adubasim", email="uchadubs@gmail.com" },
 ]
@@ -28,11 +28,15 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 [project.scripts]
-quadratic-solver = "quadratic_solver.run:main"
+test-quadratic-engine = "quadratic_solver.test:run"
 
 [project.urls]
 Homepage = "https://github.com/uche-wealth/quadratic_solver"
 Issues = "https://github.com/uche-wealth/quadratic_solver/issues"
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["quadratic_solver*"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

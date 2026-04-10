@@ -4,6 +4,8 @@ A powerful and easy-to-use Command Line Interface (CLI) application for solving
 and visualizing quadratic equations. This tool computes key properties of 
 quadratic functions and provides a graphical representation of the curve.
 
+***Note: It is recommended to use the stable release.***
+
 
 ## Features
 
@@ -33,25 +35,36 @@ pip install quadratic-solver
 
 ## Usage
 
-Run the CLI tool from your terminal:
+Start by importing the model in Python:
 
-```bash
-quadratic-solver
+```python
+from quadratic_solver.model import QuadraticFunctions
 ```
 
-You will be prompted to input the coefficients:
+Make an instance of QuadraticFunctions:
 
-```bash
-Enter coefficient a: 1
-Enter coefficient b: -3
-Enter coefficient c: 2
+```python
+qf = QuadraticFunctions(8, 23, 1)
 ```
 
+Then call the methods:
+
+```python
+qf.quadratic_formula()  # solve and display the roots, discriminant, vertex and axis of symmetry
+qf.plot_and_display_graph() # plot and display graph of the quadratic function
+```
+
+## Methods
+* convert_to_float - convert user input (a, b, c) to float and returns it. 
+* vertex - return tuple of ordered pair (vertex) of the function.
+* discriminant - returns the discriminant of the function.
+* quadratic_formula - solve and display the roots, discriminant, vertex and axis of symmetry
+* plot_and_display_graph - plot and display graph of the quadratic function
 
 ## Example Output
 
 ```
-Quadratic Equation: 1x² - 3x + 2 = 0
+Quadratic Equation: x² - 3x + 2 = 0
 
 Discriminant: 1
 Roots: x₁ = 2, x₂ = 1
@@ -106,14 +119,6 @@ Graphing is handled programmatically using Python plotting libraries.
   * matplotlib
   * numpy 
 
-## Project Structure
-
-```
-quadratic_solver/
-│── quadratic_model.py
-│── run.py
-│── solve_and_graph.py
-```
 
 
 ## Contributing
@@ -133,7 +138,6 @@ This project is licensed under the MIT License.
 
 ## Future Improvements
 
-* Export graph as image file
 * Batch processing of multiple equations
 * Interactive mode with command flags
 
