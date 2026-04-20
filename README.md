@@ -1,8 +1,8 @@
 # Quadratic Solver
 
-A powerful and easy-to-use Command Line Interface (CLI) application for solving 
-and visualizing quadratic equations. This tool computes key properties of 
-quadratic functions and provides a graphical representation of the curve.
+A powerful and easy-to-use PyPI package for solving and visualizing quadratic 
+equations. This tool computes key properties of quadratic functions and provides 
+a graphical representation of the curve.
 
 ***Note: It is recommended to use the stable release.***
 
